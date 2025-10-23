@@ -41,6 +41,7 @@
     --spacing-50: 0.25rem;
 
     --rounded-sm: 0.5rem;
+    --rounded-full: 6.25rem;
 
     --max-testimonials-w-mobile: 19.0625rem;
     --max-testimonials-w-desktop: 69.635rem;
@@ -49,7 +50,7 @@
 }
 
 body {
-    font-family: 'BarlowSemiCondensed';
+    font-family: 'BarlowSemiCondensed', Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
@@ -94,7 +95,6 @@ body {
 .text-purple-50 { color: var(--purple-50); }
 .text-grey-100 { color: var(--grey-100); }
 .text-grey-200 { color: var(--grey-200); }
-.text-grey-300 { color: var(--grey-200); }
 .text-grey-500 { color: var(--grey-500); }
 .text-grey-400 { color: var(--grey-400); }
 
@@ -104,13 +104,13 @@ body {
 .bg-dark-blue {background-color: var(--dark-blue);}
 
 body {
-    background-color: var(--grey-50);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     padding-block: clamp(73px, 19vw, 83px);
+    background-color: var(--grey-50);
 }
 
 .testimonials {
@@ -144,7 +144,7 @@ body {
 .avatar {
     width: auto;
     max-height: var(--max-avatar-h);
-    border-radius: 100px;
+    border-radius: var(--rounded-full);
     border: 0.125rem solid transparent;
 }
 
